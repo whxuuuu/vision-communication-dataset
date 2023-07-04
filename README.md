@@ -31,3 +31,4 @@ The Wireless Insite, a ray tracing software, is used to simulate the channel, as
  <div align=center>
  <center>Fig. 3. The synchronization simulation in Wireless Insite.</center>
   </div align=center>
+Remark: For the vehicle distribution feature (VDF), the two additional feature dimensions can enhance the beam alignment performance. Specifically, we set a  local coordinate system (LCS) for each VDF grid, and the detailed definition of the LCS can refer to the Section III.B in https://ieeexplore.ieee.org/abstract/document/9129762. Then, for the vehicles contained in a VDF grid, the normalized average X-Y plane location coordinates of the vehicles under the LCS of the grid can be used to extend the corresponding row of the VDF. The normalization operation is to divide a (X or Y axis) plane coordinate by the grid size of the corresponding dimension (grid length or width).
