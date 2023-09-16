@@ -7,6 +7,7 @@ The dataset is released for the ***vision perception aided wireless communicatio
  <div align=center>
  <center>Fig. 1. The communication environment in CARLA.</center>
   </div align=center>
+ 
 + **Image Generation**:
 The images are taken by the four cameras above the roof center of MS, as shown in Fig. 2. The heights of the four cameras are set to be $0.5\mathrm{m}$ higher than the roof of MS. The frame rate of all the cameras are set as 20. We repeat making the MS running through the RSU's coverage area under different traffic conditions for 600 times. For the $q$ th repetition, $q=1,2,\cdots,600$, the MS can obtain four images at each shooting moment to form an image set, and thereby collect an image set sequence $I_{q,r}$, $r=1,2,\cdots,S_q$, in the RSU's coverage area, where $S_q$ is the length of the image set sequence, $I_{q,r}=\lbrace V_{q,r,c}\ |\ c=1,2,3,4 \rbrace$ and $V_{q,r,c}$ is the image taken by the $c$ th camera with the azimuth $\frac{-\pi (c-1)}{2}$. The image $V_{q,r,c}$ is saved as the file: 'Images/Carla_{q-1}/Camera_{c}/{r-1}.png'.
 
