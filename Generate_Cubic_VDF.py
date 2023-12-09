@@ -85,7 +85,7 @@ for init_index in enumerate(range(init_start, init_end)):
                 vehicle_weight_num_all+=vehicle_weight_num
                 vehicle_num_sta +=1
 
-        #Calculate the average of each parameter of all vehicles in a grid
+        #Calculate the average of each parameter for all vehicles in a grid
         for ii in range(vehicle_weight_all.shape[0]):
             for jj in range(vehicle_weight_all.shape[1]):
                 for zz in range(vehicle_weight_all.shape[2]):
