@@ -111,7 +111,7 @@ for init_index in enumerate(range(init_start, init_end)):
         print('Load:', init_index[1], scene_index)
 
 
-np.save('.//VDF_Cubic.npy',VBALA_Scene_all)
+np.save('.//Cubic_VDF.npy',VBALA_Scene_all)
 
 
 
