@@ -37,7 +37,7 @@ def vehicle_distribution(VL,VW,VH,VR,Vcenter_ori):
             Y_spatial = int(-min(max(Y_index, y_min), y_max) + y_max)
             grid_coor = [(X_spatial + x_min + 1) * W_grid - 1 * W_grid, (y_max - Y_spatial + 1) * L_grid - 1 * L_grid]
             grid_coie=(Vcenter[0]-grid_coor[0])/W_grid,(Vcenter[1]-grid_coor[1])/L_grid
-            VBALA_fea[Y_spatial,X_spatial,Z_index,:]=np.array([grid_coie[0],grid_coie[1],(VH/2-Z_index*H_grid)/H_grid,VW/W_max,VL/L_max,VH/H_max,VR_t/2/np.pi])#Normalized sizes and locations coordinates. The azimuths in the paper is also normalized by the factor 2pi.
+            VBALA_fea[Y_spatial,X_spatial,Z_index,:]=np.array([grid_coie[0],grid_coie[1],(VH/2-Z_index*H_grid)/H_grid,VW/W_max,VL/L_max,VH/H_max,VR_t/2/np.pi])#Normalized sizes and locations coordinates. The azimuths in the paper are also normalized by the factor 2pi.
             VBALA_fea_num[Y_spatial,X_spatial,Z_index]=1
     return VBALA_fea,VBALA_fea_num
 
