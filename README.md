@@ -41,3 +41,5 @@ In the simulation of the paper, the dataset of each neural network is only shuff
 
 ![result](https://github.com/whxuuuu/vision-communication-dataset/assets/77795139/70ceb20b-8dbd-4308-ae40-e05dad267670)
  <center>Fig. R4. The NLOS ATRR achieved by Top-B beam pair selection under the training mode with dataset shuffle at every epoch.</center>
+
+As the simulation results under the training mode with only single dataset shuffle are apparent lower than that under the usual training mode with dataset shuffle at every epoch (compared with Fig. 13 in the paper and Fig. R4), it is highly recommended to perform the VBALA with cubic VDF and VBALU with SIF under the usual training mode to further effectively compare with your research or explore possible improvements.
