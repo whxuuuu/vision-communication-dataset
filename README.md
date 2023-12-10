@@ -40,6 +40,8 @@ Moreover, the cube area covered by the RCS can be further divided into the cubic
 In the simulation of the paper, the dataset of each neural network is only shuffled once in total during the training phase. For the usual training mode with dataset shuffle at every epoch during the training phase, the above VDFs with additional location dimensions are strongly recommended to achieve better performance. For instance, Fig. R4 shows the NLOS ATRR achieved by Top-B beam pair selection of the proposed and compared beam alignment methods under the training mode with dataset shuffle at every epoch. It is seen that compared with the corresponding simulation results in the paper, the ATRR of all the beam alignment methods are significantly improved. The proposed VBALA with cubic VDF and VBALU with SIF can still outperform the BMBA, the LBA, and the SABA. All the conclusions in the paper will maintain effectiveness under the usual training mode with dataset shuffle at every epoch.
 
 ![result](https://github.com/whxuuuu/vision-communication-dataset/assets/77795139/70ceb20b-8dbd-4308-ae40-e05dad267670)
- <center>Fig. R4. The NLOS ATRR achieved by Top-B beam pair selection under the training mode with dataset shuffle at every epoch.</center>
+<div align=center>
+<center>Fig. R4. The NLOS ATRR achieved by Top-B beam pair selection under the training mode with dataset shuffle at every epoch.</center>
+</div align=center>
 
 As the simulation results under the training mode with only single dataset shuffle are apparent lower than that under the usual training mode with dataset shuffle at every epoch (compared with Fig. 13 in the paper and Fig. R4), it is highly recommended to perform the VBALA with cubic VDF and VBALU with SIF under the usual training mode to further effectively compare with your research or explore possible improvements.
