@@ -1,4 +1,4 @@
-# vision-communication-dataset
+# Computer Vision Aided mmWave Beam Alignment in V2X Communications
 
 The dataset is released for the ***vision perception aided wireless communication***, such as the beam alignment task. The dataset is collected in the V2X communication scenario. The communication environment and vehicles are simulated in the CARLA, an autonomous driving simulation platform, to realize the vision information gathering, as Fig. R1 shows. This dataset includes four components: images, locations, 3D detection results and channels. Here is the detailed generation steps:
 <div align=center>
