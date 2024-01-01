@@ -33,8 +33,8 @@ The Wireless Insite, a ray tracing software, is used to simulate the channel, as
  <center>Fig. R3. The synchronization simulation in Wireless Insite.</center>
   </div align=center>
 
+# Corrigendum and Addendum
 
-+ **Corrigendum and Addendum**:
 **Addendum** (trick): For the vehicle distribution feature (VDF), the two additional feature dimensions can be used to enhance the beam alignment performance. Specifically, we set a  local coordinate system (LCS) for each VDF grid, and the detailed definition of the LCS can refer to the Section III.B in https://ieeexplore.ieee.org/abstract/document/9129762. Then, for the vehicles contained in a VDF grid, the normalized average X-Y plane location coordinates of the vehicles under the LCS of the grid can be used to extend the corresponding row of the VDF. The normalization operation is to divide a (X or Y axis) plane coordinate by the grid size of the corresponding dimension (grid length or width).
 
 Moreover, the cube area covered by the RSU can be further divided into the cubic girds to generate the VDF. Similarly, we set a LCS for each cubic grid of the VDF. Then, for the vehicles contained in a cubic grid, the normalized average X-Y-Z location coordinates of the vehicles under the LCS of the grid can be used to extend the corresponding row of the VDF. The 1D convolutional layers in the VDBAN can be straightforwardly replaced with the 3D convolutional layers to adapt to the VDF with cubic grids. The script for the generation of the VDF with cubic grids is shown in the file: 'Generate_Cubic_VDF.py'.
