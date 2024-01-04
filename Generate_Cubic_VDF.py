@@ -75,7 +75,7 @@ for init_index in enumerate(range(init_start, init_end)):
         vehicle_weight_num_all=0
         vehicle_num_sta = 0
         for vehicle_piece in vehicles_dic_dect:
-            if vehicle_piece['extent'][2] * 2 > 1.6860366083047085:#1.547088+0.05+(3-1.547088-0.05)*(1.788678/2)/(15-1.788678/2)=1.6860366083047085 is the height that can block the MS antenna in the BS coverage area
+            if vehicle_piece['extent'][2] * 2 > 1.6860366083047085:#1.547088+0.05+(3-1.547088-0.05)*(1.788678/2)/(15-1.788678/2)=1.6860366083047085 is the minimum height that can block the MS antenna in the BS coverage area
                 vehicle_weight,vehicle_weight_num = vehicle_distribution(vehicle_piece['extent'][1] * 2,
                                                     vehicle_piece['extent'][0] * 2,
                                                     vehicle_piece['extent'][2] * 2,
