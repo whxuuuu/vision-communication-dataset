@@ -49,6 +49,7 @@ of the vehicles in $\bm{\mathcal{V}}_g$ as $(x_{\mathrm{L}}^{g},y_{\mathrm{L}}^g
 The VDF is defined as a $G\times 6$ dimensional matrix $\bm{F}\in \mathbb{R}^{G\times 6}$, and the $g$th row of $\bm{F}$ is set as $[\frac{l_{\mathrm{ave},g}}{L_{\mathrm{max}}}, \frac{w_{\mathrm{ave},g}}{W_{\mathrm{max}}}, \frac{h_{\mathrm{ave},g}}{H_{\mathrm{max}}}, \frac{\theta_{\mathrm{R}}^{g}}{2\pi},\frac{x_{\mathrm{L}}^{g}}{L_{\mathrm{G}}},\frac{y_{\mathrm{L}}^{g}}{W_{\mathrm{G}}}]$.
 
 **Addendum**:
+
 We modify the training approach to the usual mode with dataset shuffle at every epoch. Then, we obtain the corrected simulation results in Fig.~R5, Fig.~R6, Fig.~R7, and Fig.~R8, which corresponds to the Fig.~11, Fig.~12, Fig.~13, and Fig.~14, respectively in the paper. All the conclusions from Fig.~R6, the Fig.~R7, and Fig.~R8 are consistent with that from Fig.~12, Fig.~13, and Fig.~14 in the paper. For more details, please read the document: https://github.com/whxuuuu/vision-communication-dataset/blob/main/Corrigendum%20and%20Addendum%20to%20%E2%80%9CComputer%20Vision%20Aided%20mmWave%20Beam%20Alignment%20in%20V2X%20Communications%E2%80%9D.pdf.
 
 ![results1](https://github.com/whxuuuu/vision-communication-dataset/assets/77795139/ba0df752-d9ad-4b02-9ae8-8903503095e6)
