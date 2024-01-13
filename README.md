@@ -37,7 +37,7 @@ The Wireless Insite, a ray tracing software, is used to simulate the channel, as
 
 We are frightfully sorry for few defective details about the proposed vision based beam alignment method. Specifically, due to the limitations of the adopted training steps for the deep neural networks (DNN), the obtained simulation results of both the proposed and compared beam alignment methods do not fully demonstrate their achievable performance. Thus, we slightly correct the design of the vehicle distribution feature (VDF). The vehicle locations are used to expand the VDF. The utilized maximum vehicle size in each grid is replace by the average vehicle size. Then, we modify the training approach and add some simulation results to enhance the persuasiveness. All the conclusions remain unchanged.
 
-**Corrigendum**:
+**Addendum to the VDF design**:
 ![fig1_00](https://github.com/whxuuuu/vision-communication-dataset/assets/77795139/72054766-e712-4c2f-89f5-8fa4c2a1546a)
 <div align=center>
 <center>Fig. R4. The diagram of the proposed VBALA.</center>
@@ -48,7 +48,7 @@ of the vehicles in $V_g$ as $(x_{\mathrm{L}}^g,y_{\mathrm{L}}^g)$.
 
 The VDF is defined as a $G\times 6$ dimensional matrix $F\in \mathbb{R}^{G\times 6}$, and the g-th row of $F$ is set as $[\frac{l_{\mathrm{ave},g}}{L_{\mathrm{max}}}, \frac{w_{\mathrm{ave},g}}{W_{\mathrm{max}}}, \frac{h_{\mathrm{ave},g}}{H_{\mathrm{max}}}, \frac{\theta_{\mathrm{R}}^{g}}{2\pi},\frac{x_{\mathrm{L}}^{g}}{L_{\mathrm{G}}},\frac{y_{\mathrm{L}}^{g}}{W_{\mathrm{G}}}]$.
 
-**Addendum**:
+**Corrigendum and Addendum to the Simulation Results**:
 We modify the training approach to the usual mode with dataset shuffle at every epoch. Then, we obtain the corrected simulation results in Fig.~R5, Fig.~R6, Fig.~R7, and Fig.~R8, which corresponds to the Fig.~11, Fig.~12, Fig.~13, and Fig.~14, respectively in the paper. All the conclusions from Fig.~R6, the Fig.~R7, and Fig.~R8 are consistent with that from Fig.~12, Fig.~13, and Fig.~14 in the paper. For more details, please read the document: [Corrigendum and Addendum to "Computer Vision Aided mmWave Beam Alignment in V2X Communications"](https://github.com/whxuuuu/vision-communication-dataset/blob/main/Corrigendum%20and%20Addendum%20to%20%E2%80%9CComputer%20Vision%20Aided%20mmWave%20Beam%20Alignment%20in%20V2X%20Communications%E2%80%9D.pdf).
 
 ![results1](https://github.com/whxuuuu/vision-communication-dataset/assets/77795139/ba0df752-d9ad-4b02-9ae8-8903503095e6)
