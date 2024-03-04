@@ -33,7 +33,7 @@ The Wireless Insite, a ray tracing software, is used to simulate the channel, as
  <center>Fig. R3. The synchronization simulation in Wireless Insite.</center>
   </div align=center>
 
-# Corrigendum and Addendum
+# Corrections
 
 We are frightfully sorry for few defective details about the proposed vision based beam alignment method. Specifically, due to the limitations of the adopted training steps for the deep neural networks (DNN), the obtained simulation results of both the proposed and compared beam alignment methods do not fully demonstrate their achievable performance. Thus, we slightly correct the design of the vehicle distribution feature (VDF). The vehicle locations are used to expand the VDF. The utilized maximum vehicle size in each grid is replace by the average vehicle size. Then, we modify the training approach and add some simulation results to enhance the persuasiveness. All the conclusions remain unchanged.
 
