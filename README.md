@@ -32,27 +32,3 @@ The Wireless Insite, a ray tracing software, is used to simulate the channel, as
  <div align=center>
  <center>Fig. R3. The synchronization simulation in Wireless Insite.</center>
   </div align=center>
-
-# Corrections
-
-We are frightfully sorry for few defective details about the proposed vision based beam alignment method. Due to some inappropriately adopted training steps for the deep neural networks (DNN) in the paper, the performance of both the proposed and compared beam alignment methods is underestimated in simulation. Thus, we slightly correct the design of the vehicle distribution feature (VDF) for the proposed vision based beam alignment when the MS location is available (VBALA). Specifically, we utilize the vehicle locations to expand the dimensions of the VDF. Then, we modify the training approach and correct the simulation results of Fig.~11, Fig.~12, Fig.~13, and Fig.~14 in \cite{WXu}. All the conclusions derived from the simulation results remain unchanged.
-
-**Corrections to the VDF design**:
-![fig1_00](https://github.com/whxuuuu/vision-communication-dataset/assets/77795139/aacc9a45-256d-48bc-b214-faec26d3f7d6)
- <div align=center>
- <center>Fig. R4. The diagram of the proposed VBALA.</center>
- </div align=center>
-
-Fig.~R4 shows the diagram of the proposed vision based beam alignment when the MS location is available (VBALA). We obtain the average length $l_{\mathrm{ave},g}$, width $w_{\mathrm{ave},g}$ and height $h_{\mathrm{ave},g}$ of the vehicles in $V_g$. Moreover, for the g-th grid, we set a local coordinate system (LCS) with $X_{\mathrm{L}}$-axis, $Y_{\mathrm{L}}$-axis, and $Z_{\mathrm{L}}$-axis, where the origin is the vertex $(i^X_g W_{\mathrm{G}}, i^Y_g L_{\mathrm{G}}, 0)$ and the $X_{\mathrm{L}}-Y_{\mathrm{L}}-Z_{\mathrm{L}}$ axis is parallel to the $X_{\mathrm{R}}-Y_{\mathrm{R}}-Z_{\mathrm{R}}$ axis. Thus, under the LCS of the g-th grid, we obtain the average plane location coordinates
-of the vehicles in $V_g$ as $(x_{\mathrm{L}}^g,y_{\mathrm{L}}^g)$.
-
-The VDF is defined as a $G\times 6$ dimensional matrix $F\in \mathbb{R}^{G\times 6}$, and the g-th row of $F$ is set as $[\frac{w_{\mathrm{ave},g}}{W_{\mathrm{max}}}, \frac{l_{\mathrm{ave},g}}{L_{\mathrm{max}}}, \frac{h_{\mathrm{ave},g}}{H_{\mathrm{max}}}, \frac{\theta_{\mathrm{R}}^{g}}{2\pi}, \frac{x_{\mathrm{L}}^{g}}{W_{\mathrm{G}}}, \frac{y_{\mathrm{L}}^{g}}{L_{\mathrm{G}}}]$.
-
-**Corrections to the Simulation Results**:
-We modify the training approach to the usual mode with dataset shuffle at every epoch. Then, we obtain the corrected simulation results in Fig.~R5, Fig.~R6, Fig.~R7, and Fig.~R8, which corresponds to the Fig.~11, Fig.~12, Fig.~13, and Fig.~14, respectively in the paper. All the conclusions from Fig.~R6, the Fig.~R7, and Fig.~R8 are consistent with that from Fig.~12, Fig.~13, and Fig.~14 in the paper. For more details, please read the document: [Corrections to "Computer Vision Aided mmWave Beam Alignment in V2X Communications"](https://github.com/whxuuuu/vision-communication-dataset/blob/main/Corrections%20to%20%E2%80%9CComputer%20Vision%20Aided%20mmWave%20Beam%20Alignment%20in%20V2X%20Communications%E2%80%9D.pdf).
-
-![results1](https://github.com/whxuuuu/vision-communication-dataset/assets/77795139/ba0df752-d9ad-4b02-9ae8-8903503095e6)
-<div align=center>
-<center>Fig. R5-R7. The corrected simulation results.</center>
-</div align=center>
-
